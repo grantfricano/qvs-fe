@@ -3,7 +3,7 @@ import React from 'react';
 
 import Home from "./Pages/Home";
 import Profile from "./Pages/Profile";
-import Login from "./Pages/Login";
+import UserData from "./Pages/UserData";
 
 function AppRouter() {
     
@@ -12,7 +12,7 @@ function AppRouter() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/profile" element={<Profile />} />    
-                <Route path="/login" element={<Login />} /> 
+                <Route path="/login" element={<UserData />} /> 
             </Routes>
          </Router>
     )
