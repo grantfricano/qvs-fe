@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import React from 'react';
 
 import Home from "./Pages/Home";
-import Profile from "./Pages/Profile";
+import Search from "./Pages/Search";
 import UserData from "./Pages/UserData";
 
 function AppRouter() {
@@ -11,8 +11,8 @@ function AppRouter() {
          <Router> 
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/profile" element={<Profile />} />    
-                <Route path="/login" element={<UserData />} /> 
+                <Route path="/search" element={<Search />} />    
+                <Route path="/submitdata" element={<UserData />} /> 
             </Routes>
          </Router>
     )
