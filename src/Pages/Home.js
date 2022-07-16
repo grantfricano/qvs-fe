@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Home() {
     
@@ -11,7 +13,7 @@ function Home() {
         .then((data) => setData(data.message));
     }, []);
     
-    return <div>This is the home page <p> test {data}</p></div>;
+    return <div>This is the home page <Button>test</Button> {data}</div>;
     
 
 }
