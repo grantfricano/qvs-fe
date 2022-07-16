@@ -1,5 +1,7 @@
 import React, { useState }  from 'react';
 import Axios from 'axios';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function UserData() {
@@ -37,7 +39,7 @@ export default function UserData() {
         <input onChange={nameUpdate} type="text" name= "username"/>
       </label>
       <div>
-        <button type="submit">Submit</button>
+        <Button type="submit">Submit</Button>
       </div>
     </form>
   )

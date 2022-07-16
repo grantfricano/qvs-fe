@@ -13,7 +13,7 @@ function Home() {
         .then((data) => setData(data.message));
     }, []);
     
-    return <div>This is the home page <Button>test</Button> {data}</div>;
+    return <div><Button>test</Button> {data}</div>;
     
 
 }
