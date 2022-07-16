@@ -20,7 +20,7 @@ export default function Search() {
       {userData.length > 0 && (
         <ul>
           {userData.map(user => (
-            <li key={user.id}> test {user.username} </li>
+            <li key={user._id}> test {user.username} </li>
       ))}
         </ul>
       )}
