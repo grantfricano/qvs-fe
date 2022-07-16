@@ -2,26 +2,27 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Pages/Home";
-import Profile from "./Pages/Search";
-import Login from "./Pages/UserData";
-import Axios from "axios";
-import AppRouter from "./AppRouter";
+import Search from "./Pages/Search";
+import UserData from "./Pages/UserData";
+import Navbar from "./Navbar";
 
 
 function App() {
     
-    
   return (
-      
      <div className="App">
-       <ul id='nav-list'>
-         <li><a href="/">Home</a></li>
-         <li><a href="/submitdata">Submit Form</a></li>
-         <li><a href="/search">Search</a></li>
-       </ul>
-      
-      <AppRouter />
-      
+       <>
+       <Navbar />
+       <div className="container">
+       <Router> 
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/search" element={<Search />} />    
+                <Route path="/submitdata" element={<UserData />} /> 
+            </Routes>
+         </Router>
+        </div>
+      </>
       </div>
   );
 }
