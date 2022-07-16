@@ -16,11 +16,11 @@ export default function Search() {
   }, [])
   
   return (
-    <div><p> {userData.length} </p>
+    <div>
       {userData.length > 0 && (
         <ul>
           {userData.map(user => (
-            <li key={user._id}> test {user.username} </li>
+            <li key={user._id}>{user.username} </li>
       ))}
         </ul>
       )}
