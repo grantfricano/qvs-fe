@@ -32,6 +32,13 @@ code {
    font-weight: 700;
 }
 
+.navbar-lastname {
+  color: rgb(233, 231, 231) !important;
+  font-family: 'bebas-neue-by-fontfabric' !important;
+  font-size: 46pt;
+  font-weight: 300;
+}
+
 .navbar-links {
   color: rgb(211, 209, 209) !important;
   font-family: 'bebas-neue-by-fontfabric' !important;
