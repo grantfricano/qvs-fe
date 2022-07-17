@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Home() {
+export default function Home() {
     
     
     const [data, setData] = React.useState(null);
@@ -17,5 +17,3 @@ function Home() {
     
 
 }
-
-export default Home;

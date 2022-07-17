@@ -2,12 +2,12 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 export default function Navbar() {
     return (
-    <nav className="nav">
-      <ul id='nav-list'>
-        <li><a href="/">Home</a></li>
-        <li><a href="/submitdata">Submit Form</a></li>
-        <li><a href="/search">Search</a></li>
+    <nav className="nav">  
+      <Link to="/">Home</Link>
+      <ul>
+        <li><Link to="/submitdata">Submit Form</Link></li>
+        <li><Link to="/search">Search</Link></li>
       </ul>
-      </nav>
+    </nav>
     )
   }
