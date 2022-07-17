@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
     <nav className="nav">  
       <Link to="/"><div className="navbar-name">Grant</div>Fricano</Link>
-      <ul>
+      <ul className="navbar-links"> 
         <li><Link to="/submitdata">Submit Form</Link></li>
         <li><Link to="/search">Search</Link></li>
       </ul>

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://use.typekit.net/tpg1kbo.css");
+
 
 body {
   margin: 0;
@@ -26,9 +27,16 @@ code {
 
 .navbar-name {
    color: rgb(255, 255, 97) !important;
-   font-family: 'Bebas Neue' !important;
+   font-family: 'bebas-neue-by-fontfabric' !important;
    font-size: 48pt;
-   font-weight: 400;
+   font-weight: 700;
+}
+
+.navbar-links {
+  color: rgb(211, 209, 209) !important;
+  font-family: 'bebas-neue-by-fontfabric' !important;
+  font-size: 20pt;
+  font-weight: 300;
 }
 
 .container {
