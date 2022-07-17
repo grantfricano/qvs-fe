@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 export default function Home() {
     
     
@@ -13,7 +17,18 @@ export default function Home() {
         .then((data) => setData(data.message));
     }, []);
     
-    return <div><Button>test</Button> {data}</div>;
-    
+    return (
+      <Container>
+       <Row>
+          <Col><div className="home-component"><Button>test</Button> {data}</div></Col>
+          <Col>Col 2 of 2</Col>
+        </Row>
+      <Row>
+        <Col>1 of 3</Col>
+        <Col>2 of 3</Col>
+        <Col>3 of 3</Col>
+      </Row>
+    </Container>
+    )
 
 }
