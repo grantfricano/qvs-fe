@@ -1,13 +1,21 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export default function Navbar() {
     return (
+    
     <nav className="nav">  
-      <Link to="/"><span className="navbar-name">Grant </span><span className="navbar-lastname">&nbsp;Fricano</span></Link>
-      <ul className="navbar-links"> 
-        <li><Link to="/submitdata">Submit Form</Link></li>
-        <li><Link to="/search">Search</Link></li>
-      </ul>
+      <Container>
+        <Row>
+          <Col md = {6}> <Link to="/"><div className="navbar-name">Grant</div><div className="navbar-lastname">Fricano</div></Link></Col>
+          <Col><div className="navbar-links"> <Link to="/submitdata">Contact</Link></div></Col>
+          <Col><div className="navbar-links"> <Link to="/search">Search</Link></div></Col>
+          <Col><div className="navbar-links"> <Link to="/mywork">My Work </Link></div></Col>
+        </Row>
+      </Container>
+
     </nav>
     )
   }

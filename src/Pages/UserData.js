@@ -35,11 +35,11 @@ export default function UserData() {
   return(
     <form onSubmit={handleSubmit}>
       <label>
-        <p>Username</p>
+        <h1 className="contact">Contact Me</h1>
         <input onChange={nameUpdate} type="text" name= "username"/>
       </label>
       <div>
-        <Button type="submit">Submit</Button>
+        <Button type="submit" className='contact'>Submit</Button>
       </div>
     </form>
   )

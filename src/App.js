@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Search from "./Pages/Search";
 import UserData from "./Pages/UserData";
 import Navbar from "./Navbar";
+import MyWork from './Pages/MyWork';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/search" element={<Search />} />    
               <Route path="/submitdata" element={<UserData />} /> 
+              <Route path="/mywork" element={<MyWork />} />
           </Routes>
         </div>
       </>
