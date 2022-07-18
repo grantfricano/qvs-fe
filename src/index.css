@@ -35,7 +35,7 @@ code {
   color: rgb(233, 231, 231) !important;
   font-family: 'bebas-neue-by-fontfabric' !important;
   font-size: 64pt;
-  font-weight: 300;
+  font-weight: 300; 
   position:relative;
   top:-65px;
   
@@ -55,7 +55,9 @@ code {
   top:60px;
   white-space: nowrap;
 }
-
+.navbar-links:hover {
+  font-size: 21pt;
+}
 .container {
   margin: 1rem;
   text-align: center;
