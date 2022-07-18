@@ -19,9 +19,9 @@ code {
 }
 
 .nav {
-  background-color: rgb(135, 132, 132);
+  background-color: rgb(95, 94, 94);
   color: white;
-  padding: 0 1rem;
+  padding: 0 0rem;
 }
 
 .navbar-name {
@@ -53,7 +53,7 @@ code {
   font-weight: 300;
   position:relative;
   top:60px;
-  
+  white-space: nowrap;
 }
 
 .container {
