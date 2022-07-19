@@ -39,12 +39,12 @@ export default function MyWork() {
         disabled={readyState !== ReadyState.OPEN}
       >
         Click Me to send 'Hello'
-      </button>
-      <span>The WebSocket is currently {connectionStatus}</span>
+      </button><br/>
+      <span>The WebSocket is currently {connectionStatus}</span><br/>
       {lastMessage ? <span>Last message: {lastMessage.data}</span> : null}
       <ul>
         {messageHistory.map((message, idx) => (
-          <span key={idx}>{message ? message.data : null}</span>
+          <span key={idx}>{message ? idx + ' ' + message.data : null}<br/></span>
         ))}
       </ul>
     </div>
